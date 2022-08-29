@@ -17,10 +17,8 @@ A customised ProgressView for iOS
 
         override func viewDidLoad() {
             super.viewDidLoad()
-
-            //MARK: - Call setup method
+            
             setupData()
-            // Do any additional setup after loading the view.
         }
 
         // MARK: -  Setup fill data for all progressViews
