@@ -8,11 +8,8 @@ A customised ProgressView for iOS
 
     class ViewController: UIViewController {
         @IBOutlet weak var redProgressView:DCSProgressView!
-
         @IBOutlet weak var greenProgressView:DCSProgressView!
-
         @IBOutlet weak var blackProgressView:DCSProgressView!
-
         @IBOutlet weak var yellowProgressView:DCSProgressView!
 
         override func viewDidLoad() {
