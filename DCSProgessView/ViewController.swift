@@ -1,10 +1,10 @@
-# DCSProgressView
+//
+//  ViewController.swift
+//  DCSProgessView
+//
 
-A customised ProgressView for iOS 
 
-#This contains a simple code for ProgressView. #Very simple to use, Just drag and drop 2 source files in your project or drag progress folder and start using. #DCSProgressView, #ProgressView
-
-#How to use:
+import UIKit
 
 class ViewController: UIViewController {
     
@@ -43,3 +43,5 @@ class ViewController: UIViewController {
     }
 
 }
+
+

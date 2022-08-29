@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="DCSProgessView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FQ4-42-6zh">
+                                <rect key="frame" x="20" y="94" width="374" height="67.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red ProgressViiew" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfb-km-aid">
+                                        <rect key="frame" x="10" y="0.0" width="141.5" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20.5" id="b5R-Dv-pMG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mSq-gI-r8q" customClass="DCSProgressView" customModule="DCSProgessView" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="30.5" width="344" height="20"/>
+                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="xOM-IP-FFg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Lfb-km-aid" firstAttribute="top" secondItem="FQ4-42-6zh" secondAttribute="top" id="8q8-jI-N0A"/>
+                                    <constraint firstAttribute="trailing" secondItem="mSq-gI-r8q" secondAttribute="trailing" constant="15" id="AWC-LU-2Gx"/>
+                                    <constraint firstItem="mSq-gI-r8q" firstAttribute="leading" secondItem="FQ4-42-6zh" secondAttribute="leading" constant="15" id="CS4-pl-sBK"/>
+                                    <constraint firstItem="Lfb-km-aid" firstAttribute="leading" secondItem="FQ4-42-6zh" secondAttribute="leading" constant="10" id="R2f-Pd-JuH"/>
+                                    <constraint firstItem="mSq-gI-r8q" firstAttribute="top" secondItem="Lfb-km-aid" secondAttribute="bottom" constant="10" id="Rsb-9b-m5c"/>
+                                    <constraint firstAttribute="height" constant="67.5" id="c7C-bf-ikL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1F-G6-ink">
+                                <rect key="frame" x="20" y="211.5" width="374" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yellow ProgressViiew" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Wf-bO-m63">
+                                        <rect key="frame" x="10" y="0.0" width="160.5" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20.5" id="dlh-cN-Btu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ntq-PY-y6V" customClass="DCSProgressView" customModule="DCSProgessView" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="30.5" width="344" height="25"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="eiT-Af-ZHO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ntq-PY-y6V" firstAttribute="top" secondItem="7Wf-bO-m63" secondAttribute="bottom" constant="10" id="684-1o-wMq"/>
+                                    <constraint firstItem="7Wf-bO-m63" firstAttribute="leading" secondItem="D1F-G6-ink" secondAttribute="leading" constant="10" id="KkW-Kq-5xH"/>
+                                    <constraint firstItem="7Wf-bO-m63" firstAttribute="top" secondItem="D1F-G6-ink" secondAttribute="top" id="euV-Un-c1M"/>
+                                    <constraint firstAttribute="trailing" secondItem="ntq-PY-y6V" secondAttribute="trailing" constant="15" id="mid-OX-csT"/>
+                                    <constraint firstAttribute="height" constant="75" id="wWY-8P-cX9"/>
+                                    <constraint firstItem="ntq-PY-y6V" firstAttribute="leading" secondItem="D1F-G6-ink" secondAttribute="leading" constant="15" id="xzm-BL-2wS"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeQ-XN-yU7">
+                                <rect key="frame" x="20" y="316.5" width="374" height="85"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green ProgressViiew" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASS-cR-AkM">
+                                        <rect key="frame" x="10" y="0.0" width="158" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20.5" id="QwR-BZ-eRh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wwt-11-opv" customClass="DCSProgressView" customModule="DCSProgessView" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="30.5" width="344" height="35"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="3mO-DT-IHe"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Wwt-11-opv" firstAttribute="top" secondItem="ASS-cR-AkM" secondAttribute="bottom" constant="10" id="0lv-BC-LXj"/>
+                                    <constraint firstItem="ASS-cR-AkM" firstAttribute="leading" secondItem="zeQ-XN-yU7" secondAttribute="leading" constant="10" id="BhH-UF-RXR"/>
+                                    <constraint firstItem="ASS-cR-AkM" firstAttribute="top" secondItem="zeQ-XN-yU7" secondAttribute="top" id="NoM-9M-8na"/>
+                                    <constraint firstAttribute="height" constant="85" id="UWJ-5f-uVd"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wwt-11-opv" secondAttribute="trailing" constant="15" id="VG3-eA-r3u"/>
+                                    <constraint firstItem="Wwt-11-opv" firstAttribute="leading" secondItem="zeQ-XN-yU7" secondAttribute="leading" constant="15" id="rKG-RM-Yav"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vV-sH-g57">
+                                <rect key="frame" x="20" y="431.5" width="374" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Black ProgressViiew" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvr-QK-NwA">
+                                        <rect key="frame" x="10" y="0.0" width="153.5" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20.5" id="KlK-W7-iyz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POf-66-0Kf" customClass="DCSProgressView" customModule="DCSProgessView" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="30.5" width="344" height="30"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="7rm-Lz-zxs"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Fvr-QK-NwA" firstAttribute="top" secondItem="3vV-sH-g57" secondAttribute="top" id="BOp-Un-Gtw"/>
+                                    <constraint firstItem="Fvr-QK-NwA" firstAttribute="leading" secondItem="3vV-sH-g57" secondAttribute="leading" constant="10" id="a1O-W9-LL0"/>
+                                    <constraint firstItem="POf-66-0Kf" firstAttribute="leading" secondItem="3vV-sH-g57" secondAttribute="leading" constant="15" id="fF9-bM-ZM1"/>
+                                    <constraint firstAttribute="trailing" secondItem="POf-66-0Kf" secondAttribute="trailing" constant="15" id="gPE-vn-HSA"/>
+                                    <constraint firstAttribute="height" constant="100" id="lzj-cL-9kN"/>
+                                    <constraint firstItem="POf-66-0Kf" firstAttribute="top" secondItem="Fvr-QK-NwA" secondAttribute="bottom" constant="10" id="nTj-CF-kAX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3vV-sH-g57" secondAttribute="trailing" constant="20" id="4HG-x0-yiD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zeQ-XN-yU7" secondAttribute="trailing" constant="20" id="APf-Rz-x85"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D1F-G6-ink" secondAttribute="trailing" constant="20" id="KnK-JV-Z0g"/>
+                            <constraint firstItem="zeQ-XN-yU7" firstAttribute="top" secondItem="D1F-G6-ink" secondAttribute="bottom" constant="30" id="Oyh-Ug-rYy"/>
+                            <constraint firstItem="FQ4-42-6zh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="P1x-qr-VwU"/>
+                            <constraint firstItem="zeQ-XN-yU7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Qp5-b2-Lg9"/>
+                            <constraint firstItem="3vV-sH-g57" firstAttribute="top" secondItem="zeQ-XN-yU7" secondAttribute="bottom" constant="30" id="Rjt-OJ-pt3"/>
+                            <constraint firstItem="D1F-G6-ink" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XCP-uM-ycc"/>
+                            <constraint firstItem="FQ4-42-6zh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dKU-Pm-Yzw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FQ4-42-6zh" secondAttribute="trailing" constant="20" id="eqW-Pp-kwk"/>
+                            <constraint firstItem="D1F-G6-ink" firstAttribute="top" secondItem="FQ4-42-6zh" secondAttribute="bottom" constant="50" id="ggZ-uG-HVf"/>
+                            <constraint firstItem="3vV-sH-g57" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mSq-kM-vyf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blackProgressView" destination="POf-66-0Kf" id="tGD-gU-HSP"/>
+                        <outlet property="greenProgressView" destination="Wwt-11-opv" id="sL8-ZX-CDF"/>
+                        <outlet property="redProgressView" destination="mSq-gI-r8q" id="WC4-XW-JZ3"/>
+                        <outlet property="yellowProgressView" destination="ntq-PY-y6V" id="gwT-7n-rpf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.04347826086958" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
