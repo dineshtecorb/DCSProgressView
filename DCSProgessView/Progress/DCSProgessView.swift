@@ -7,7 +7,7 @@ import Foundation
 import UIKit
 
 class DCSProgressView: UIView {
-    
+        
     // MARK: - progess background color
     var color: UIColor = UIColor.red
     
@@ -19,6 +19,7 @@ class DCSProgressView: UIView {
             setNeedsDisplay()
         }
     }
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
